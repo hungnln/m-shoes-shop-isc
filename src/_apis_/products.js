@@ -56,7 +56,7 @@ const products = [...Array(24)].map((_, index) => ({
   sku: `WW75K521${index}YW/SV`,
   tags: PRODUCT_TAGS,
   price: mockData.number.price(index),
-  priceSale: index % 3 ? null : mockData.number.price(index),
+  priceSale: index % 3 ? null : mockData.number.price(index) * 1.5,
   totalRating: mockData.number.rating(index),
   totalReview: random(9999),
   ratings: [...Array(5)].map((_, index) => ({
